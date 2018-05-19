@@ -1,9 +1,9 @@
 //set settings for timer
 
 export const settingsReducerDefaultState = {
-  timePeriodWork: 25,
-  timePeriodRest: 5,
-  timePeriodBigRest: 25
+  timePeriodWork: 0.5,
+  timePeriodRest: 0.5,
+  timePeriodBigRest: 1
 };
 
 export default (state = settingsReducerDefaultState, action) => {

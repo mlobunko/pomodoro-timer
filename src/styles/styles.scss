@@ -1,28 +1,15 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+@import "./base/_settings";
+@import "./base/_base";
+@import "./components/_bg-image";
+@import "./components/_main";
+@import "./components/_content";
+@import "./components/_header";
+@import "./components/_container";
+@import "./components/_timerTime";
+@import "./components/_tomatos";
+@import "./components/_tomato-anim";
+@import "./components/_tomato";
+@import "./components/_buttons";
+@import "./components/_button";
+@import "./components/_button-side";
+@import "./components/_footer";

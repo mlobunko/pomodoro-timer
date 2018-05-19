@@ -1,0 +1,20 @@
+.buttons {
+  margin-top: $s-size;
+  flex-shrink: 0;
+  width: 31rem;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 360px) {
+  .buttons {
+    width: 35rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .buttons {
+    width: 42rem;
+  }
+}

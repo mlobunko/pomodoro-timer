@@ -1,17 +1,29 @@
 import React from "react";
+import Header from "./components/Header";
 import TimerTime from "./components/TimerTime";
+import Tomatos from "./components/Tomatos";
+import ButtonSettings from "./components/ButtonSettings";
 import ButtonStartPause from "./components/ButtonStartPause";
 import ButtonReset from "./components/ButtonReset";
+import Footer from "./components/Footer";
 
 const App = () => (
   <div>
-    <h1>Pomodoro Clock</h1>
-    <span>settings</span>
-    <TimerTime />
-    <div>tomato</div>
-    <div>
-      <ButtonStartPause />
-      <ButtonReset />
+    <div className="bg-image" />
+    <div className="main">
+      <div className="content">
+        <Header />
+        <div className="container">
+          <TimerTime />
+          <Tomatos />
+        </div>
+        <div className="buttons">
+          <ButtonSettings />
+          <ButtonStartPause />
+          <ButtonReset />
+        </div>
+      </div>
+      {/*<Footer />*/}
     </div>
   </div>
 );

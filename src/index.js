@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import createSagaMiddleware from "redux-saga";
 import "normalize.css";
 import "./styles/styles.css";
+import "font-awesome/css/font-awesome.min.css";
 import App from "./App";
 import rootSaga from "./saga/mySaga";
 import registerServiceWorker from "./registerServiceWorker";

@@ -1,5 +1,5 @@
 import { delay } from "redux-saga";
-import { put, call, select, take, all } from "redux-saga/effects";
+import { put, call, select, take, all, fork } from "redux-saga/effects";
 import {
   setDisplayTimer,
   decreaseDisplayTimerBy100ms,
@@ -33,7 +33,9 @@ const defaultState = {
 
 it("rootSaga should call all", () => {
   const gen = rootSaga();
-  expect(gen.next().value).toEqual(all([watchStartTimer(), watchResetTimer()]));
+  expect(gen.next().value).toEqual(
+    all([fork(watchStartTimer), fork(watchResetTimer)])
+  );
 });
 
 it("watchStartTimer should call a startTimer, after take and put effects", () => {

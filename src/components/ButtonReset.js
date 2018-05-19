@@ -4,7 +4,9 @@ import { resetTimer } from "../actions/saga";
 
 export const ButtonReset = ({ resetTimer }) => (
   <div>
-    <button onClick={resetTimer}>reset</button>
+    <button className="button button-side" onClick={resetTimer}>
+      <i className="fa fa-undo" />
+    </button>
   </div>
 );
 

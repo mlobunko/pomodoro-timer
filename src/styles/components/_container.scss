@@ -1,0 +1,22 @@
+.container {
+  height: 65%;
+  width: 31rem;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 360px) {
+  .container {
+    width: 35rem;
+  }
+}
+@media (min-width: 600px) {
+  .container {
+    width: 42rem;
+    height: 80%;
+  }
+}

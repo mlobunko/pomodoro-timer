@@ -1,0 +1,10 @@
+.bg-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: url(../img/clock.svg);
+  background-size: cover;
+  height: 100vh;
+  filter: opacity(15%);
+}

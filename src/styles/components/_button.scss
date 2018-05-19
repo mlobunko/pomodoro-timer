@@ -1,0 +1,20 @@
+.button {
+  text-align: center;
+  font-size: $m-big-size;
+  padding: $xs-size $m-size;
+  background: $olive;
+  border: 2px solid $olive;
+  color: white;
+  border-radius: $s-size;
+  width: $xxl-size-bp;
+}
+
+.button:active {
+  color: $olive;
+  background: white;
+}
+
+.button:hover {
+  color: $olive;
+  background: white;
+}

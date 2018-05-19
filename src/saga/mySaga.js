@@ -1,5 +1,5 @@
 import { delay } from "redux-saga";
-import { put, call, select, take, all } from "redux-saga/effects";
+import { put, call, select, take, all, fork } from "redux-saga/effects";
 import {
   setDisplayTimer,
   decreaseDisplayTimerBy100ms,
@@ -66,5 +66,5 @@ export function* watchResetTimer() {
 }
 
 export default function* rootSaga() {
-  yield all([watchStartTimer(), watchResetTimer()]);
+  yield all([fork(watchStartTimer), fork(watchResetTimer)]);
 }

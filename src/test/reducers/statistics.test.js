@@ -1,7 +1,7 @@
 import statistics from "../../reducers/statistics";
 
 const statisticsReducerDefaultState = {
-  displayTimer: 1500000, //25mins
+  displayTimer: 1500, //25mins
   timerOn: false,
   isWorkingTime: true,
   numberPeriodsThatPassed: 0 //max is 4 including 0
