@@ -37,3 +37,13 @@ export const addOnePeriod = () => ({
 export const resetPeriods = () => ({
   type: "RESET_PERIODS"
 });
+
+//change boolean isSettingsOpen to true
+export const openSettings = () => ({
+  type: "OPEN_SETTINGS"
+});
+
+//change boolean isSettingsOpen to false
+export const closeSettings = () => ({
+  type: "CLOSE_SETTINGS"
+});

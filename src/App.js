@@ -5,7 +5,6 @@ import Tomatos from "./components/Tomatos";
 import ButtonSettings from "./components/ButtonSettings";
 import ButtonStartPause from "./components/ButtonStartPause";
 import ButtonReset from "./components/ButtonReset";
-import Footer from "./components/Footer";
 
 const App = () => (
   <div>
@@ -23,7 +22,6 @@ const App = () => (
           <ButtonReset />
         </div>
       </div>
-      {/*<Footer />*/}
     </div>
   </div>
 );

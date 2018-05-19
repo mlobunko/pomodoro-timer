@@ -6,7 +6,9 @@ import {
   isWorkingTimeToTrue,
   isWorkingTimeToFalse,
   addOnePeriod,
-  resetPeriods
+  resetPeriods,
+  openSettings,
+  closeSettings
 } from "../../actions/statistics";
 
 it("should set displayTimer", () => {
@@ -65,4 +67,18 @@ it("should create an action to reset a number of periods that passed", () => {
     type: "RESET_PERIODS"
   };
   expect(resetPeriods()).toEqual(expectedAction);
+});
+
+it("should create an action to set boolean value isSettingsOpen to true", () => {
+  const expectedAction = {
+    type: "OPEN_SETTINGS"
+  };
+  expect(openSettings()).toEqual(expectedAction);
+});
+
+it("should create an action to set boolean valuse isSettings to false", () => {
+  const expectedAction = {
+    type: "CLOSE_SETTINGS"
+  };
+  expect(closeSettings()).toEqual(expectedAction);
 });

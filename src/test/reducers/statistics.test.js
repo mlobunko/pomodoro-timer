@@ -1,10 +1,11 @@
 import statistics from "../../reducers/statistics";
 
 const statisticsReducerDefaultState = {
-  displayTimer: 1500, //25mins
+  displayTimer: 1500000, //25mins
   timerOn: false,
   isWorkingTime: true,
-  numberPeriodsThatPassed: 0 //max is 4 including 0
+  numberPeriodsThatPassed: 0, //max is 4 including 0
+  isSettingsOpen: false
 };
 
 it("should set default state", () => {
@@ -88,7 +89,8 @@ it("should add one to a number of periods and reset if it's 5", () => {
     displayTimer: 1500000, //25mins
     timerOn: false,
     isWorkingTime: true,
-    numberPeriodsThatPassed: 4
+    numberPeriodsThatPassed: 4,
+    isSettingsOpen: false
   };
   const numberPeriodsThatPassed = 4;
   const state = statistics(defaultState, action);
@@ -106,5 +108,31 @@ it("should reset a number periods to a zero", () => {
   expect(state).toEqual({
     ...statisticsReducerDefaultState,
     numberPeriodsThatPassed: 0
+  });
+});
+
+it("should set boolean isSettingsOpen to true", () => {
+  const action = {
+    type: "OPEN_SETTINGS"
+  };
+  const state = statistics(undefined, action);
+  expect(state).toEqual({
+    ...statisticsReducerDefaultState,
+    isSettingsOpen: true
+  });
+});
+
+it("should set boolean isSettingsOpen to false", () => {
+  const action = {
+    type: "CLOSE_SETTINGS"
+  };
+  const defaultState = {
+    ...statisticsReducerDefaultState,
+    isSettingsOpen: true
+  };
+  const state = statistics(defaultState, action);
+  expect(state).toEqual({
+    ...statisticsReducerDefaultState,
+    isSettingsOpen: false
   });
 });

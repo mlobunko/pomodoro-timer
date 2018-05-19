@@ -1,8 +1,9 @@
 export const statisticsReducerDefaultState = {
-  displayTimer: 1500, //25mins
+  displayTimer: 1500000, //25mins
   timerOn: false,
   isWorkingTime: true,
-  numberPeriodsThatPassed: 0 //max is 4 including 0
+  numberPeriodsThatPassed: 0, //max is 4 including 0
+  isSettingsOpen: false
 };
 
 export default (state = statisticsReducerDefaultState, action) => {
@@ -47,6 +48,16 @@ export default (state = statisticsReducerDefaultState, action) => {
       return {
         ...state,
         numberPeriodsThatPassed: 0
+      };
+    case "OPEN_SETTINGS":
+      return {
+        ...state,
+        isSettingsOpen: true
+      };
+    case "CLOSE_SETTINGS":
+      return {
+        ...state,
+        isSettingsOpen: false
       };
     default:
       return state;
