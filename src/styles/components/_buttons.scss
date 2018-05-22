@@ -1,20 +1,20 @@
 .buttons {
   margin-top: $s-size;
   flex-shrink: 0;
-  width: 31rem;
-  height: 50px;
+  width: $width-container-320;
+  height: 46px;
   display: flex;
   justify-content: space-between;
 }
 
 @media (min-width: 360px) {
   .buttons {
-    width: 35rem;
+    width: $width-container-360;
   }
 }
 
 @media (min-width: 600px) {
   .buttons {
-    width: 42rem;
+    width: $width-container-600;
   }
 }

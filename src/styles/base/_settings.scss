@@ -1,6 +1,4 @@
 // colors
-$dark-red: #dd2f2f;
-$light-red: #ea473b;
 $olive: #3d9970;
 //spacing
 $xs-size: 0.6rem;
@@ -10,8 +8,12 @@ $m-big-size: 2.2rem;
 $l-size: 3.2rem;
 $xl-size: 4.8rem;
 $xxl-size: 7.5rem;
+$width-container-320: 31rem;
+// >=360
+$width-container-360: 35rem;
 //spacing >= 600px
 $xxl-size-bp: 9.5rem;
+$width-container-600: 42rem;
 
 @font-face {
   font-family: TitanOne;

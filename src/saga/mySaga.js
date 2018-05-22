@@ -11,6 +11,7 @@ import {
   resetPeriods
 } from "../actions/statistics";
 import { minToMs } from "../logic/convert";
+import play from "../logic/sound";
 
 export function* startTimer() {
   while (true) {
@@ -22,10 +23,11 @@ export function* startTimer() {
         isWorkingTime,
         numberPeriodsThatPassed
       },
-      settings: { timePeriodWork, timePeriodRest, timePeriodBigRest }
+      settings: { timePeriodWork, timePeriodRest, timePeriodBigRest, isSound }
     } = yield select();
     if (timerOn) {
       if (displayTimer < 100) {
+        if (isSound) yield fork(play);
         if (isWorkingTime) {
           yield put(isWorkingTimeToFalse());
           if (numberPeriodsThatPassed === 3) {
@@ -54,7 +56,15 @@ export function* watchStartTimer() {
 
 export function* watchResetTimer() {
   while (true) {
-    yield take("RESET_TIMER");
+    yield take([
+      "RESET_TIMER",
+      "INCREASE_TIME_PERIOD_WORK",
+      "DECREASE_TIME_PERIOD_WORK",
+      "INCREASE_TIME_PERIOD_REST",
+      "DECREASE_TIME_PERIOD_REST",
+      "INCREASE_TIME_PERIOD_BIG_REST",
+      "DECREASE_TIME_PERIOD_BIG_REST"
+    ]);
     const {
       settings: { timePeriodWork }
     } = yield select();

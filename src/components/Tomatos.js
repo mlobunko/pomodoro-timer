@@ -1,6 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-import tomato from "../img/tomato.svg";
 export const Tomatos = ({
   timerOn,
   isWorkingTime,

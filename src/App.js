@@ -5,6 +5,7 @@ import Tomatos from "./components/Tomatos";
 import ButtonSettings from "./components/ButtonSettings";
 import ButtonStartPause from "./components/ButtonStartPause";
 import ButtonReset from "./components/ButtonReset";
+import Settings from "./components/Settings";
 
 const App = () => (
   <div>
@@ -22,6 +23,7 @@ const App = () => (
           <ButtonReset />
         </div>
       </div>
+      <Settings />
     </div>
   </div>
 );

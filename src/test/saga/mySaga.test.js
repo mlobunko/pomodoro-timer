@@ -11,6 +11,7 @@ import {
   resetPeriods
 } from "../../actions/statistics";
 import { minToMs } from "../../logic/convert";
+import play from "../../logic/sound";
 import rootSaga, {
   startTimer,
   watchStartTimer,
@@ -27,7 +28,8 @@ const defaultState = {
   settings: {
     timePeriodWork: 25,
     timePeriodRest: 5,
-    timePeriodBigRest: 25
+    timePeriodBigRest: 25,
+    isSound: false
   }
 };
 
@@ -52,7 +54,17 @@ describe("watchResetTimer", () => {
 
   it("should take RESET_TIMER", () => {
     const gen = watchResetTimer();
-    expect(gen.next().value).toEqual(take("RESET_TIMER"));
+    expect(gen.next().value).toEqual(
+      take([
+        "RESET_TIMER",
+        "INCREASE_TIME_PERIOD_WORK",
+        "DECREASE_TIME_PERIOD_WORK",
+        "INCREASE_TIME_PERIOD_REST",
+        "DECREASE_TIME_PERIOD_REST",
+        "INCREASE_TIME_PERIOD_BIG_REST",
+        "DECREASE_TIME_PERIOD_BIG_REST"
+      ])
+    );
   });
 
   it("should use select to get state", () => {
@@ -131,6 +143,24 @@ describe("startTimer generator", () => {
     gen.next();
     gen.next();
     expect(gen.next(state).value).toEqual(put(decreaseDisplayTimerBy100ms()));
+  });
+
+  it("should fork(play) if isSound is true", () => {
+    const state = {
+      ...defaultState,
+      statistics: {
+        timerOn: true,
+        displayTimer: 0,
+        isWorkingTime: false
+      },
+      settings: {
+        isSound: true
+      }
+    };
+    const gen = startTimer();
+    gen.next();
+    gen.next();
+    expect(gen.next(state).value).toEqual(fork(play));
   });
 
   it("should put isWorkingTimeToTrue when displayTimer < 100 and isWorkingTime false", () => {

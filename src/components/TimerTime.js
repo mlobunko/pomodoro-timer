@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { msToMmSs } from "../logic/convert";
 
 export const TimerTime = ({ isWorkingTime, displayTimer }) => (
-  <div className={isWorkingTime ? "timerTime" : "timerTime timerTime--rest"}>
+  <div className={isWorkingTime ? "timer-time" : "timer-time timer-time--rest"}>
     {msToMmSs(displayTimer)}
   </div>
 );

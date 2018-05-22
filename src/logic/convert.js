@@ -10,3 +10,10 @@ export const msToMmSs = ms => {
   sec = sec < 10 ? `0${sec}` : sec;
   return `${min}:${sec}`;
 };
+
+//function to add 0 if less than 10
+export const displaySettings = num => {
+  if (num < 10) {
+    return `0${num}`;
+  } else return num;
+};

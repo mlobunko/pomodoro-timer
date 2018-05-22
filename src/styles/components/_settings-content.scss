@@ -1,0 +1,8 @@
+.settings-content {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 5rem 5rem 5rem 5rem;
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}

@@ -6,6 +6,7 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "font-awesome": "^4.7.0",
+    "howler": "^2.0.12",
     "node-sass-chokidar": "^1.2.2",
     "normalize.css": "^8.0.0",
     "npm-run-all": "^4.1.3",

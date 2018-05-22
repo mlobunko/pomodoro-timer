@@ -1,22 +1,22 @@
 .container {
   height: 65%;
-  width: 31rem;
+  width: $width-container-320;
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
   text-align: center;
+  font-size: $l-size;
 }
 
 @media (min-width: 360px) {
   .container {
-    width: 35rem;
+    width: $width-container-360;
   }
 }
 @media (min-width: 600px) {
   .container {
-    width: 42rem;
+    width: $width-container-600;
     height: 80%;
   }
 }

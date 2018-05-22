@@ -21,9 +21,6 @@ const mapStateToProps = state => ({
   timerOn: state.statistics.timerOn
 });
 
-const mapDispatchToProps = dispatch => ({
-  startTimer: () => dispatch(startTimer()),
-  timerOnToFalse: () => dispatch(timerOnToFalse())
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(ButtonStartPause);
+export default connect(mapStateToProps, { startTimer, timerOnToFalse })(
+  ButtonStartPause
+);

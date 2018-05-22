@@ -1,4 +1,4 @@
-.timerTime {
+.timer-time {
   background: url(../img/tomato.svg) no-repeat center center;
   background-size: contain;
   width: 100%;
@@ -10,19 +10,19 @@
   font-family: TitanOne;
 }
 
-.timerTime--rest {
+.timer-time--rest {
   background: url(../img/tomato-cool.png) no-repeat center center;
   background-size: contain;
 }
 @media (min-width: 360px) {
-  .timerTime {
+  .timer-time {
     height: 34rem;
     line-height: 43rem;
   }
 }
 
 @media (min-width: 600px) {
-  .timerTime {
+  .timer-time {
     height: 38rem;
     line-height: 48rem;
     font-size: $xxl-size-bp;
