@@ -5,7 +5,7 @@ import { resetTimer } from "../actions/saga";
 export const ButtonReset = ({ resetTimer }) => (
   <div>
     <button className="button button-side" onClick={resetTimer}>
-      <i class="fa fa-refresh" aria-hidden="true" />
+      <i className="fa fa-refresh" aria-hidden="true" />
     </button>
   </div>
 );

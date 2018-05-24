@@ -7,7 +7,7 @@ export const ButtonStartPause = ({ timerOn, startTimer, timerOnToFalse }) => (
   <div>
     {timerOn ? (
       <button className="button" onClick={timerOnToFalse}>
-        <i class="fa fa-pause" />
+        <i className="fa fa-pause" />
       </button>
     ) : (
       <button className="button" onClick={startTimer}>

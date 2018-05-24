@@ -5,7 +5,7 @@ import { openSettings } from "../actions/statistics";
 export const ButtonSettings = ({ openSettings }) => (
   <div>
     <button className="button button-side" onClick={openSettings}>
-      <i class="fa fa-cog" />
+      <i className="fa fa-cog" />
     </button>
   </div>
 );

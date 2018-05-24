@@ -11,7 +11,7 @@ const Header = () => (
       rel="noopener noreferrer"
     >
       <div>
-        <i class="fa fa-info-circle" />
+        <i className="fa fa-info-circle" />
       </div>
     </a>
   </div>
