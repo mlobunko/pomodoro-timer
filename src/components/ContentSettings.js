@@ -1,30 +1,19 @@
 import React from "react";
 import { connect } from "react-redux";
-import {
-  increaseTimePeriodWork,
-  decreaseTimePeriodWork,
-  increaseTimePeriodRest,
-  decreaseTimePeriodRest,
-  increaseTimePeriodBigRest,
-  decreaseTimePeriodBigRest,
-  changeIsSound
-} from "../actions/settings";
+import ButtonDecreaseTimePeriodWork from "./SettingsButtons/ButtonDecreaseTimePeriodWork";
+import ButtonIncreaseTimePeriodWork from "./SettingsButtons/ButtonIncreaseTimePeriodWork";
+import ButtonDecreaseTimePeriodRest from "./SettingsButtons/ButtonDecreaseTimePeriodRest";
+import ButtonIncreaseTimePeriodRest from "./SettingsButtons/ButtonIncreaseTimePeriodRest";
+import ButtonIncreaseTimePeriodBigRest from "./SettingsButtons/ButtonIncreaseTimePeriodBigRest";
+import ButtonDecreaseTimePeriodBigRest from "./SettingsButtons/ButtonDecreaseTimePeriodBigRest";
+import ButtonChangeIsSound from "./SettingsButtons/ButtonChangeIsSound";
+import ButtonCloseSettings from "./SettingsButtons/ButtonCloseSettings";
 import { displaySettings } from "../logic/convert";
-import { closeSettings } from "../actions/statistics";
 
 export const ContentSettings = ({
   timePeriodWork,
   timePeriodRest,
-  timePeriodBigRest,
-  isSound,
-  closeSettings,
-  increaseTimePeriodWork,
-  decreaseTimePeriodWork,
-  increaseTimePeriodRest,
-  decreaseTimePeriodRest,
-  increaseTimePeriodBigRest,
-  decreaseTimePeriodBigRest,
-  changeIsSound
+  timePeriodBigRest
 }) => (
   <div className="content-settings">
     <div className="header">
@@ -34,60 +23,24 @@ export const ContentSettings = ({
       <div className="settings-content">
         <div>Work</div>
         <div>
-          <button
-            onClick={decreaseTimePeriodWork}
-            className="button-plus-minus"
-          >
-            <i class="fa fa-minus" />
-          </button>
+          <ButtonDecreaseTimePeriodWork />
           {displaySettings(timePeriodWork)}
-          <button
-            onClick={increaseTimePeriodWork}
-            className="button-plus-minus"
-          >
-            <i class="fa fa-plus" />
-          </button>
+          <ButtonIncreaseTimePeriodWork />
         </div>
         <div>Rest</div>
         <div>
-          <button
-            onClick={decreaseTimePeriodRest}
-            className="button-plus-minus"
-          >
-            <i class="fa fa-minus" />
-          </button>
+          <ButtonDecreaseTimePeriodRest />
           {displaySettings(timePeriodRest)}
-          <button
-            onClick={increaseTimePeriodRest}
-            className="button-plus-minus"
-          >
-            <i class="fa fa-plus" />
-          </button>
+          <ButtonIncreaseTimePeriodRest />
         </div>
         <div>Big rest</div>
         <div>
-          <button
-            onClick={decreaseTimePeriodBigRest}
-            className="button-plus-minus"
-          >
-            <i class="fa fa-minus" />
-          </button>
+          <ButtonDecreaseTimePeriodBigRest />
           {displaySettings(timePeriodBigRest)}
-          <button
-            onClick={increaseTimePeriodBigRest}
-            className="button-plus-minus"
-          >
-            <i class="fa fa-plus" />
-          </button>
+          <ButtonIncreaseTimePeriodBigRest />
         </div>
         <div>Sound</div>
-        <div onClick={changeIsSound} className="button-plus-minus">
-          {isSound ? (
-            <i class="fa fa-volume-up" />
-          ) : (
-            <i class="fa fa-volume-down" />
-          )}
-        </div>
+        <ButtonChangeIsSound />
       </div>
       <div className="attribute">
         Icons made by Freepik from www.flaticon.com
@@ -95,9 +48,7 @@ export const ContentSettings = ({
     </div>
     <div className="buttons">
       <div className="button-settings-close">
-        <button onClick={closeSettings} className="button">
-          OK
-        </button>
+        <ButtonCloseSettings />
       </div>
     </div>
   </div>
@@ -106,17 +57,7 @@ export const ContentSettings = ({
 const mapStateToProps = state => ({
   timePeriodWork: state.settings.timePeriodWork,
   timePeriodRest: state.settings.timePeriodRest,
-  timePeriodBigRest: state.settings.timePeriodBigRest,
-  isSound: state.settings.isSound
+  timePeriodBigRest: state.settings.timePeriodBigRest
 });
 
-export default connect(mapStateToProps, {
-  closeSettings,
-  increaseTimePeriodWork,
-  decreaseTimePeriodWork,
-  increaseTimePeriodRest,
-  decreaseTimePeriodRest,
-  increaseTimePeriodBigRest,
-  decreaseTimePeriodBigRest,
-  changeIsSound
-})(ContentSettings);
+export default connect(mapStateToProps)(ContentSettings);

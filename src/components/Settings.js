@@ -14,9 +14,7 @@ export const Settings = ({ isSettingsOpen }) => (
       overlayClassName="Overlay"
       ariaHideApp={false}
     >
-      <div className="modal-inside">
-        <ContentSettings />
-      </div>
+      <ContentSettings />
     </ReactModal>
   </div>
 );
