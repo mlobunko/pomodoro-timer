@@ -12,6 +12,7 @@ import registerServiceWorker from "./registerServiceWorker";
 import settingsReducer from "./reducers/settings";
 import statisticsReducer from "./reducers/statistics";
 import { composeWithDevTools } from "redux-devtools-extension/logOnlyInProduction";
+import persistState from "redux-localstorage";
 
 const composeEnhancers = composeWithDevTools({
   // options like actionSanitizer, stateSanitizer
@@ -23,7 +24,8 @@ const store = createStore(
     settings: settingsReducer,
     statistics: statisticsReducer
   }),
-  composeEnhancers(applyMiddleware(sagaMiddleware))
+  composeEnhancers(applyMiddleware(sagaMiddleware)),
+  persistState()
 );
 sagaMiddleware.run(rootSaga);
 
