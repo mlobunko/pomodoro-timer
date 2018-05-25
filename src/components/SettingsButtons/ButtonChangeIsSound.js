@@ -4,7 +4,11 @@ import { changeIsSound } from "../../actions/settings";
 
 export const ButtonChangeIsSound = ({ changeIsSound, isSound }) => (
   <div onClick={changeIsSound} className="button-plus-minus">
-    {isSound ? <i class="fa fa-volume-up" /> : <i class="fa fa-volume-down" />}
+    {isSound ? (
+      <i className="fa fa-volume-up" />
+    ) : (
+      <i className="fa fa-volume-down" />
+    )}
   </div>
 );
 

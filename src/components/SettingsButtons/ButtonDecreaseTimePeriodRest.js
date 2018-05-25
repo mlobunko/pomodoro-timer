@@ -4,7 +4,7 @@ import { decreaseTimePeriodRest } from "../../actions/settings";
 
 export const ButtonDecreaseTimePeriodRest = ({ decreaseTimePeriodRest }) => (
   <button onClick={decreaseTimePeriodRest} className="button-plus-minus">
-    <i class="fa fa-minus" />
+    <i className="fa fa-minus" />
   </button>
 );
 

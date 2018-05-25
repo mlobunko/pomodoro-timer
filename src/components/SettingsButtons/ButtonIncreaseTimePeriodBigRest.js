@@ -6,7 +6,7 @@ export const ButtonIncreaseTimePeriodBigRest = ({
   increaseTimePeriodBigRest
 }) => (
   <button onClick={increaseTimePeriodBigRest} className="button-plus-minus">
-    <i class="fa fa-plus" />
+    <i className="fa fa-plus" />
   </button>
 );
 

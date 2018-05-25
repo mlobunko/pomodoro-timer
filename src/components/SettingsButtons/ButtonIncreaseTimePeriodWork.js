@@ -4,7 +4,7 @@ import { increaseTimePeriodWork } from "../../actions/settings";
 
 export const ButtonIncreaseTimePeriodWork = ({ increaseTimePeriodWork }) => (
   <button onClick={increaseTimePeriodWork} className="button-plus-minus">
-    <i class="fa fa-plus" />
+    <i className="fa fa-plus" />
   </button>
 );
 

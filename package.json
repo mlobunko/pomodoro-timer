@@ -1,6 +1,6 @@
 {
   "name": "pomodoro-app",
-  "homepage": "https:///mlobunko.github.io/pomodoro-app",
+  "homepage": "https://mlobunko.github.io/pomodoro-timer/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
