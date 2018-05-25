@@ -1,11 +1,13 @@
 {
   "name": "pomodoro-app",
+  "homepage": "https:///mlobunko.github.io/pomodoro-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^1.1.0",
     "howler": "^2.0.12",
     "node-sass-chokidar": "^1.2.2",
     "normalize.css": "^8.0.0",
@@ -21,8 +23,11 @@
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "watch-css":
+      "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
