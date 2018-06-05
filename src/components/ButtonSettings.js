@@ -4,7 +4,11 @@ import { openSettings } from "../actions/statistics";
 
 export const ButtonSettings = ({ openSettings }) => (
   <div>
-    <button className="button button-side" onClick={openSettings}>
+    <button
+      aria-label="settings button"
+      className="button button-side"
+      onClick={openSettings}
+    >
       <i className="fa fa-cog" />
     </button>
   </div>

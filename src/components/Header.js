@@ -9,6 +9,7 @@ const Header = () => (
       href="https://en.wikipedia.org/wiki/Pomodoro_Technique"
       target="_blank"
       rel="noopener noreferrer"
+      aria-label="wiki link on article about Pomodoro Technique"
     >
       <div>
         <i className="fa fa-info-circle" />

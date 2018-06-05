@@ -5,7 +5,11 @@ import { decreaseTimePeriodBigRest } from "../../actions/settings";
 export const ButtonDecreaseTimePeriodBigRest = ({
   decreaseTimePeriodBigRest
 }) => (
-  <button onClick={decreaseTimePeriodBigRest} className="button-plus-minus">
+  <button
+    onClick={decreaseTimePeriodBigRest}
+    className="button-plus-minus"
+    aria-label="button decrease time for big rest"
+  >
     <i className="fa fa-minus" />
   </button>
 );

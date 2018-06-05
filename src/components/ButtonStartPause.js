@@ -6,11 +6,15 @@ import { timerOnToFalse } from "../actions/statistics";
 export const ButtonStartPause = ({ timerOn, startTimer, timerOnToFalse }) => (
   <div>
     {timerOn ? (
-      <button className="button" onClick={timerOnToFalse}>
+      <button
+        aria-label="pause button"
+        className="button"
+        onClick={timerOnToFalse}
+      >
         <i className="fa fa-pause" />
       </button>
     ) : (
-      <button className="button" onClick={startTimer}>
+      <button className="button" onClick={startTimer} aria-label="play button">
         <i className="fa fa-play" />
       </button>
     )}
