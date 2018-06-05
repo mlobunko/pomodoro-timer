@@ -1,5 +1,6 @@
 {
   "name": "Pomodoro Timer",
+  "short_name": "Timer",
   "icons": [
     {
       "src": "favicon.ico",
