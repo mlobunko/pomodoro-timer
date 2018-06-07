@@ -18,6 +18,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <button
+        aria-label="settings button"
         className="button button-side"
         onClick={undefined}
 >
@@ -32,6 +33,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
+        "aria-label": "settings button",
         "children": <i
           className="fa fa-cog"
 />,
@@ -61,6 +63,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <button
+          aria-label="settings button"
           className="button button-side"
           onClick={undefined}
 >
@@ -75,6 +78,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "aria-label": "settings button",
           "children": <i
             className="fa fa-cog"
 />,

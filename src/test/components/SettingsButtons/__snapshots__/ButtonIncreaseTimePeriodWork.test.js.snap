@@ -17,8 +17,9 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
+      "aria-label": "button increase time for work",
       "children": <i
-        class="fa fa-plus"
+        className="fa fa-plus"
 />,
       "className": "button-plus-minus",
       "onClick": undefined,
@@ -29,7 +30,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "class": "fa fa-plus",
+        "className": "fa fa-plus",
       },
       "ref": null,
       "rendered": null,
@@ -43,8 +44,9 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
+        "aria-label": "button increase time for work",
         "children": <i
-          class="fa fa-plus"
+          className="fa fa-plus"
 />,
         "className": "button-plus-minus",
         "onClick": undefined,
@@ -55,7 +57,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "class": "fa fa-plus",
+          "className": "fa fa-plus",
         },
         "ref": null,
         "rendered": null,

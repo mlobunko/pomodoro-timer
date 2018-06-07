@@ -17,6 +17,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
+      "aria-label": "button close settings window",
       "children": "OK",
       "className": "button",
       "onClick": undefined,
@@ -31,6 +32,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
+        "aria-label": "button close settings window",
         "children": "OK",
         "className": "button",
         "onClick": undefined,

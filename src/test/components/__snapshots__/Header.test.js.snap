@@ -26,6 +26,7 @@ ShallowWrapper {
           modoro Timer
 </h1>,
         <a
+          aria-label="wiki link on article about Pomodoro Technique"
           href="https://en.wikipedia.org/wiki/Pomodoro_Technique"
           rel="noopener noreferrer"
           target="_blank"
@@ -77,6 +78,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "aria-label": "wiki link on article about Pomodoro Technique",
           "children": <div>
             <i
                         className="fa fa-info-circle"
@@ -130,6 +132,7 @@ ShallowWrapper {
             modoro Timer
 </h1>,
           <a
+            aria-label="wiki link on article about Pomodoro Technique"
             href="https://en.wikipedia.org/wiki/Pomodoro_Technique"
             rel="noopener noreferrer"
             target="_blank"
@@ -181,6 +184,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "aria-label": "wiki link on article about Pomodoro Technique",
             "children": <div>
               <i
                             className="fa fa-info-circle"
