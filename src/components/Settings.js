@@ -23,4 +23,7 @@ const mapStateToProps = state => ({
   isSettingsOpen: state.statistics.isSettingsOpen
 });
 
-export default connect(mapStateToProps, { closeSettings })(Settings);
+export default connect(
+  mapStateToProps,
+  { closeSettings }
+)(Settings);
