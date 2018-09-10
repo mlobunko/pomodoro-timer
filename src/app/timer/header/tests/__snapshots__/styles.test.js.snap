@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledFontAwesomeIcon renders correctly 1`] = `
+<FontAwesomeIcon
+  border={false}
+  className="sc-bdVaJa eXMIgU"
+  fixedWidth={false}
+  flip={null}
+  icon={null}
+  inverse={false}
+  listItem={false}
+  mask={null}
+  pull={null}
+  pulse={false}
+  rotation={null}
+  size={null}
+  spin={false}
+  symbol={false}
+  transform={null}
+/>
+`;

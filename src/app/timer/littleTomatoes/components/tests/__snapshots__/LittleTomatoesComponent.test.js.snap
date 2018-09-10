@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render renders correctly 1`] = `
+<StyledLittleTomatoesComponent>
+  <Connect(LittleTomato)
+    order={0}
+  />
+  <Connect(LittleTomato)
+    order={1}
+  />
+  <Connect(LittleTomato)
+    order={2}
+  />
+  <Connect(LittleTomato)
+    order={3}
+  />
+</StyledLittleTomatoesComponent>
+`;

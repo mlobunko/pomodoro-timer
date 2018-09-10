@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render renders correctly 1`] = `
+<StyledButtonsComponent>
+  <Button
+    icon="cog"
+    onClick={[Function]}
+    side={true}
+  />
+  <Connect(CenterButton) />
+  <Button
+    icon="sync"
+    onClick={[Function]}
+    side={true}
+  />
+</StyledButtonsComponent>
+`;

@@ -1,39 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { createStore, combineReducers, applyMiddleware } from "redux";
-import { Provider } from "react-redux";
-import createSagaMiddleware from "redux-saga";
-import "normalize.css";
-import "./styles/styles.css";
-import "font-awesome/css/font-awesome.min.css";
-import App from "./App";
-import rootSaga from "./saga/mySaga";
-import registerServiceWorker from "./registerServiceWorker";
-import settingsReducer from "./reducers/settings";
-import statisticsReducer from "./reducers/statistics";
-import { composeWithDevTools } from "redux-devtools-extension/logOnlyInProduction";
-import persistState from "redux-localstorage";
+import './ReactotronConfig';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import 'normalize.css';
+import registerServiceWorker from './registerServiceWorker';
 
-const composeEnhancers = composeWithDevTools({
-  // options like actionSanitizer, stateSanitizer
-});
-const sagaMiddleware = createSagaMiddleware();
+import configureStore from './configureStore';
+import Main from 'main/components';
 
-const store = createStore(
-  combineReducers({
-    settings: settingsReducer,
-    statistics: statisticsReducer
-  }),
-  composeEnhancers(applyMiddleware(sagaMiddleware)),
-  persistState()
-);
-sagaMiddleware.run(rootSaga);
+const store = configureStore();
 
 const jsx = (
   <Provider store={store}>
-    <App />
+    <Main />
   </Provider>
 );
 
-ReactDOM.render(jsx, document.getElementById("root"));
+ReactDOM.render(jsx, document.getElementById('root'));
 registerServiceWorker();

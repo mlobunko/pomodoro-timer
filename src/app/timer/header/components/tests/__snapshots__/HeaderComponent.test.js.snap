@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render renders correctly 1`] = `
+<StyledHeader>
+  P
+  <StyledTomatoIcon />
+  omodoro Timer
+  <StyledInfo>
+    <a
+      aria-label="wiki link on article about Pomodoro Technique"
+      href="https://en.wikipedia.org/wiki/Pomodoro_Technique"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <IconInfo />
+    </a>
+  </StyledInfo>
+</StyledHeader>
+`;

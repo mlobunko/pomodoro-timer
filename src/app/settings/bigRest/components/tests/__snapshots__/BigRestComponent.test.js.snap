@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render renders correctly 1`] = `
+<Fragment>
+  <div>
+    BigRest
+  </div>
+  <StyledInputs>
+    <StyledInput>
+      <Button
+        icon="minus"
+        onClick={[Function]}
+        round={true}
+      />
+    </StyledInput>
+    <StyledInput />
+    <StyledInput>
+      <Button
+        icon="plus"
+        onClick={[Function]}
+        round={true}
+      />
+    </StyledInput>
+  </StyledInputs>
+</Fragment>
+`;

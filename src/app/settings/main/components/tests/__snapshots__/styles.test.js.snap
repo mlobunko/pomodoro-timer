@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledButtons renders correctly 1`] = `
+<div
+  className="sc-bdVaJa cbrBXw"
+/>
+`;
+
+exports[`StyledCenterOfPage renders correctly 1`] = `
+<div
+  className="sc-bwzfXH dObjBL"
+/>
+`;
+
+exports[`StyledHeader renders correctly 1`] = `
+<h1
+  className="sc-htpNat keGSwt"
+/>
+`;
+
+exports[`StyledListOfSettings renders correctly 1`] = `
+<div
+  className="sc-bxivhb csBXoY"
+/>
+`;
+
+exports[`StyledMainComponent renders correctly 1`] = `
+<div
+  className="sc-ifAKCX TuHJi"
+/>
+`;

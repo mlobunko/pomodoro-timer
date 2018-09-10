@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render renders correctly 1`] = `
+<StyledMainComponent>
+  <StyledHeader>
+    Settings
+  </StyledHeader>
+  <StyledCenterOfPage>
+    <StyledListOfSettings>
+      <Connect(Work) />
+      <Connect(Rest) />
+      <Connect(BigRest) />
+      <Connect(Sound) />
+    </StyledListOfSettings>
+  </StyledCenterOfPage>
+  <StyledButtons>
+    <Button
+      onClick={[Function]}
+    />
+  </StyledButtons>
+</StyledMainComponent>
+`;

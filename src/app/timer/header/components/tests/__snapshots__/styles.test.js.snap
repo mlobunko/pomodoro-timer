@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledHeader renders correctly 1`] = `
+<h1
+  className="sc-bdVaJa jIfraM"
+/>
+`;
+
+exports[`StyledInfo renders correctly 1`] = `
+<div
+  className="sc-bwzfXH frbtpc"
+/>
+`;
+
+exports[`StyledTomatoIcon renders correctly 1`] = `
+<div
+  className="sc-htpNat hkRfJY"
+/>
+`;

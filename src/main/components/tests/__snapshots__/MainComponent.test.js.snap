@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render renders correctly, handle isSettingsOpen is false 1`] = `
+<ErrorBoundary>
+  <styled.div>
+    <TimerMain />
+  </styled.div>
+</ErrorBoundary>
+`;
+
+exports[`render renders correctly, handle isSettingsOpen is true 1`] = `
+<ErrorBoundary>
+  <styled.div>
+    <Connect(SettingsMain) />
+  </styled.div>
+</ErrorBoundary>
+`;

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render renders correctly, isSound false 1`] = `
+<Fragment>
+  <div>
+    Rest
+  </div>
+  <div>
+    <Button
+      icon="volumeOff"
+      onClick={[Function]}
+      round={true}
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`render renders correctly, isSound true 1`] = `
+<Fragment>
+  <div>
+    Rest
+  </div>
+  <div>
+    <Button
+      icon="volumeUp"
+      onClick={[Function]}
+      round={true}
+    />
+  </div>
+</Fragment>
+`;

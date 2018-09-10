@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledAnimatedLittleTomato renders correctly 1`] = `
+<div
+  className="sc-bdVaJa hsdkLN"
+/>
+`;
+
+exports[`StyledLittleTomato renders correctly 1`] = `
+<div
+  className="sc-bwzfXH ksyBEl"
+/>
+`;
+
+exports[`StyledLittleTomatoesComponent renders correctly 1`] = `
+<div
+  className="sc-htpNat dWHtTZ"
+/>
+`;

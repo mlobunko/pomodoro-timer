@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render StyledAnimatedLittleTomato 1`] = `
+<Fragment>
+  <StyledAnimatedLittleTomato />
+</Fragment>
+`;
+
+exports[`render StyledLittleTomato 1`] = `
+<Fragment>
+  <StyledLittleTomato />
+</Fragment>
+`;
+
+exports[`render empty, isWorkingTime false 1`] = `<Fragment />`;
+
+exports[`render empty, timerOn false 1`] = `<Fragment />`;

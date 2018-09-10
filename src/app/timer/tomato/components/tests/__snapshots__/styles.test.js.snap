@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledTomatoComponent renders correctly, isWorkingTime true 1`] = `
+<div
+  className="sc-bdVaJa bCXSGM"
+/>
+`;
+
+exports[`StyledTomatoComponent renders correctly, isWorkingTime true 2`] = `
+<div
+  className="sc-bdVaJa dMcVnG"
+/>
+`;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledButton renders correctly with default props 1`] = `
+<button
+  className="sc-bdVaJa kZGPfO"
+/>
+`;
+
+exports[`StyledButton renders correctly with round prop 1`] = `
+<button
+  className="sc-bdVaJa dNVQlM"
+/>
+`;
+
+exports[`StyledButton renders correctly with side prop 1`] = `
+<button
+  className="sc-bdVaJa bJXDOS"
+/>
+`;
