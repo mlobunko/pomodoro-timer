@@ -13,7 +13,7 @@
 <br />
 
 <div align="center">
-  <img src="docs/images/pomodoro-timer.gif" alt="screenshot"/>
+  <img src="docs/images/tomato-timer-screen.gif" alt="screenshot"/>
 </div>
 
 <br />
