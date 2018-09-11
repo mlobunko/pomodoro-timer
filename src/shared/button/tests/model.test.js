@@ -1,13 +1,16 @@
+import React from "react";
 import {
-  IconCog,
-  IconMinus,
-  IconPause,
-  IconPlay,
-  IconPlus,
-  IconSync,
-  IconVolumeOff,
-  IconVolumeUp
-} from "../icons";
+  faCog,
+  faMinus,
+  faPause,
+  faPlay,
+  faPlus,
+  faSync,
+  faVolumeOff,
+  faVolumeUp
+} from "@fortawesome/free-solid-svg-icons";
+
+import { StyledFontAwesomeIcon } from "../styles";
 
 import { getIcon } from "../model";
 
@@ -18,49 +21,49 @@ describe("getIcon", () => {
   });
 
   it("should handle 'cog'", () => {
-    const expectedReturn = IconCog;
+    const expectedReturn = <StyledFontAwesomeIcon icon={faCog} />;
     const iconName = "cog";
     expect(getIcon(iconName)).toEqual(expectedReturn);
   });
 
   it("should handle 'minus'", () => {
-    const expectedReturn = IconMinus;
+    const expectedReturn = <StyledFontAwesomeIcon icon={faMinus} />;
     const iconName = "minus";
     expect(getIcon(iconName)).toEqual(expectedReturn);
   });
 
   it("should handle 'pause'", () => {
-    const expectedReturn = IconPause;
+    const expectedReturn = <StyledFontAwesomeIcon icon={faPause} />;
     const iconName = "pause";
     expect(getIcon(iconName)).toEqual(expectedReturn);
   });
 
   it("should handle 'play'", () => {
-    const expectedReturn = IconPlay;
+    const expectedReturn = <StyledFontAwesomeIcon icon={faPlay} />;
     const iconName = "play";
     expect(getIcon(iconName)).toEqual(expectedReturn);
   });
 
   it("should handle 'plus'", () => {
-    const expectedReturn = IconPlus;
+    const expectedReturn = <StyledFontAwesomeIcon icon={faPlus} />;
     const iconName = "plus";
     expect(getIcon(iconName)).toEqual(expectedReturn);
   });
 
   it("should handle 'sync'", () => {
-    const expectedReturn = IconSync;
+    const expectedReturn = <StyledFontAwesomeIcon icon={faSync} />;
     const iconName = "sync";
     expect(getIcon(iconName)).toEqual(expectedReturn);
   });
 
   it("should handle 'volumeOff'", () => {
-    const expectedReturn = IconVolumeOff;
+    const expectedReturn = <StyledFontAwesomeIcon icon={faVolumeOff} />;
     const iconName = "volumeOff";
     expect(getIcon(iconName)).toEqual(expectedReturn);
   });
 
   it("should handle 'volumeUp'", () => {
-    const expectedReturn = IconVolumeUp;
+    const expectedReturn = <StyledFontAwesomeIcon icon={faVolumeUp} />;
     const iconName = "volumeUp";
     expect(getIcon(iconName)).toEqual(expectedReturn);
   });

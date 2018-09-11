@@ -1,32 +1,35 @@
+import React from "react";
 import {
-  IconCog,
-  IconMinus,
-  IconPause,
-  IconPlay,
-  IconPlus,
-  IconSync,
-  IconVolumeOff,
-  IconVolumeUp
-} from "./icons";
+  faCog,
+  faMinus,
+  faPause,
+  faPlay,
+  faPlus,
+  faSync,
+  faVolumeOff,
+  faVolumeUp
+} from "@fortawesome/free-solid-svg-icons";
+
+import { StyledFontAwesomeIcon } from "./styles";
 
 export const getIcon = iconName => {
   switch (iconName) {
     case "cog":
-      return IconCog;
+      return <StyledFontAwesomeIcon icon={faCog} />;
     case "minus":
-      return IconMinus;
+      return <StyledFontAwesomeIcon icon={faMinus} />;
     case "pause":
-      return IconPause;
+      return <StyledFontAwesomeIcon icon={faPause} />;
     case "play":
-      return IconPlay;
+      return <StyledFontAwesomeIcon icon={faPlay} />;
     case "plus":
-      return IconPlus;
+      return <StyledFontAwesomeIcon icon={faPlus} />;
     case "sync":
-      return IconSync;
+      return <StyledFontAwesomeIcon icon={faSync} />;
     case "volumeOff":
-      return IconVolumeOff;
+      return <StyledFontAwesomeIcon icon={faVolumeOff} />;
     case "volumeUp":
-      return IconVolumeUp;
+      return <StyledFontAwesomeIcon icon={faVolumeUp} />;
     default:
       return "OK";
   }
