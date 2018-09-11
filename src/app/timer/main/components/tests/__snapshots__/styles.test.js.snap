@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledBackground renders correctly 1`] = `
+<div
+  className="sc-bdVaJa eLhqDt"
+/>
+`;
+
+exports[`StyledCenterOfPage renders correctly 1`] = `
+<div
+  className="sc-bwzfXH dObjBL"
+/>
+`;
+
+exports[`StyledFront renders correctly 1`] = `
+<div
+  className="sc-htpNat csgGYq"
+/>
+`;
+
+exports[`StyledPage renders correctly 1`] = `
+<div
+  className="sc-bxivhb cEVztx"
+/>
+`;

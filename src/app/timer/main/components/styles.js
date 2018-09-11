@@ -12,18 +12,6 @@ export const StyledBackground = styled.div`
   filter: opacity(15%);
 `;
 
-export const StyledFront = styled.div`
-  z-index: 2;
-`;
-
-export const StyledPage = styled.div`
-  font-size: 1.6rem;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  align-items: center;
-`;
-
 export const StyledCenterOfPage = styled.div`
   height: 65%;
   width: 31rem;
@@ -41,4 +29,16 @@ export const StyledCenterOfPage = styled.div`
     width: 42rem;
     height: 80%;
   }
+`;
+
+export const StyledFront = styled.div`
+  z-index: 2;
+`;
+
+export const StyledPage = styled.div`
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
 `;

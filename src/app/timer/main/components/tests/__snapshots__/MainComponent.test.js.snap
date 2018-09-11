@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render renders correctly 1`] = `
+<Fragment>
+  <styled.div />
+  <styled.div>
+    <styled.div>
+      <Header />
+      <styled.div>
+        <Connect(Tomato) />
+        <LittleTomatoes />
+      </styled.div>
+      <Connect(Buttons) />
+    </styled.div>
+  </styled.div>
+</Fragment>
+`;

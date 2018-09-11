@@ -47,17 +47,6 @@ export function* startTimer(timePeriodWork, timePeriodRest, timePeriodBigRest) {
   }
 }
 
-export function* watchStartTimer() {
-  while (true) {
-    yield take(t.START_TIMER);
-    const timePeriodBigRest = yield select(settings.bigRest.selectors.getAll);
-    const timePeriodRest = yield select(settings.rest.selectors.getAll);
-    const timePeriodWork = yield select(settings.work.selectors.getAll);
-    yield put(actions.setTimerOnTrue());
-    yield call(startTimer, timePeriodBigRest, timePeriodRest, timePeriodWork);
-  }
-}
-
 export function* watchResetTimer() {
   while (true) {
     yield take([
@@ -74,5 +63,16 @@ export function* watchResetTimer() {
     yield put(tomato.actions.setTime(minToMs(timePeriodWork)));
     yield put(actions.setWorkingTimeTrue());
     yield put(littleTomatoes.actions.reset());
+  }
+}
+
+export function* watchStartTimer() {
+  while (true) {
+    yield take(t.START_TIMER);
+    const timePeriodBigRest = yield select(settings.bigRest.selectors.getAll);
+    const timePeriodRest = yield select(settings.rest.selectors.getAll);
+    const timePeriodWork = yield select(settings.work.selectors.getAll);
+    yield put(actions.setTimerOnTrue());
+    yield call(startTimer, timePeriodBigRest, timePeriodRest, timePeriodWork);
   }
 }
