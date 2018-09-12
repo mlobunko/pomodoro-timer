@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import ImageBgClock from "../images/bg-clock.svg";
+import styled from 'styled-components';
+import ImageBgClock from '../images/bg-clock.svg';
 
 export const StyledBackground = styled.div`
   position: fixed;
@@ -11,6 +11,8 @@ export const StyledBackground = styled.div`
   height: 100vh;
   filter: opacity(15%);
 `;
+
+StyledBackground.displayName = 'StyledBackground';
 
 export const StyledCenterOfPage = styled.div`
   height: 65%;
@@ -31,9 +33,13 @@ export const StyledCenterOfPage = styled.div`
   }
 `;
 
+StyledCenterOfPage.displayName = 'StyledCenterOfPage';
+
 export const StyledFront = styled.div`
   z-index: 2;
 `;
+
+StyledFront.displayName = 'StyledFont';
 
 export const StyledPage = styled.div`
   font-size: 1.6rem;
@@ -42,3 +48,5 @@ export const StyledPage = styled.div`
   min-height: 100vh;
   align-items: center;
 `;
+
+StyledPage.displayName = 'StyledPage';

@@ -2,16 +2,16 @@
 
 exports[`render renders correctly 1`] = `
 <Fragment>
-  <styled.div />
-  <styled.div>
-    <styled.div>
+  <StyledBackground />
+  <StyledFont>
+    <StyledPage>
       <Header />
-      <styled.div>
+      <StyledCenterOfPage>
         <Connect(Tomato) />
         <LittleTomatoes />
-      </styled.div>
+      </StyledCenterOfPage>
       <Connect(Buttons) />
-    </styled.div>
-  </styled.div>
+    </StyledPage>
+  </StyledFont>
 </Fragment>
 `;
