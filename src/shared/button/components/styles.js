@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 export const StyledButton = styled.button`
   width: ${props => {
@@ -29,3 +30,8 @@ export const StyledButton = styled.button`
 `;
 
 StyledButton.displayName = "StyledButton";
+
+StyledButton.propTypes = {
+  round: PropTypes.bool,
+  side: PropTypes.bool
+};

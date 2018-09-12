@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
+
 import ImageTomato from "shared/images/tomato.svg";
 import ImageTomatoCool from "shared/images/tomato-cool.svg";
 
@@ -29,3 +31,7 @@ export const StyledTomatoComponent = styled.div`
 `;
 
 StyledTomatoComponent.displayName = "StyledTomatoComponent";
+
+StyledTomatoComponent.propTypes = {
+  isWorkingTime: PropTypes.bool
+};
